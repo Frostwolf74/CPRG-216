@@ -1,5 +1,14 @@
-num1 = input("Enter a number: ")
-num2 = input("Enter the next number: ")
+num1 = int(input("Enter a number: "))
+op = input("Enter operator(+,-,*,/): ") # add sq rt later
+num2 = int(input("Enter the next number: "))
 
-ans = int(num1) + int(num2)
+if op == "+":
+    ans = num1 + num2
+elif op == "-":
+    ans = num1 - num2
+elif op == "*":
+    ans = num1 * num2
+elif op == "/":
+    ans = num1 / num2
+
 print(ans)
